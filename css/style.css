@@ -1,0 +1,290 @@
+/*
+********
+Reset
+********
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+********
+Debug
+********
+*/
+
+/* box borders */
+.debug .header-top div > *,
+.debug .header-bottom > *,
+.debug main div > div,
+.debug footer div > div
+ {
+    border: 2px dashed black;
+}
+
+.debug footer .footer-top .menu-column > .col {
+    border: 2px dashed white;
+}
+
+/* colors */
+
+.debug header .header-top {
+    background-color: #add8e6;
+}
+
+.debug header .header-bottom {
+    background-color: #00008b;
+}
+
+.debug header .header-top .header-bar > * {
+    background-color: goldenrod;
+}
+
+.debug header .header-bottom .content {
+    background-color: #ee82ee;
+}
+
+.debug main section .row > .col-big {
+    background-color: #1e90ff;
+}
+
+.debug main section .row > .col-small {
+    background-color: #ffc0cb;
+}
+
+.debug main section .row > .col-full {
+    background-color: #228b22;
+}
+
+.debug footer .footer-bottom {
+    background-color: aquamarine;
+}
+
+.debug footer .footer-bottom > .col {
+    background-color: pink;
+}
+
+.debug footer .footer-top .main-column {
+    background-color: #f08080;
+}
+
+.debug footer .footer-top .menu-column {
+    background-color: #20b2aa;
+}
+
+/* heights */
+.debug header .header-bottom .content {
+    height: 400px;
+}
+
+.debug main section .row > .col-big,
+.debug main section .row > .col-small {
+    height: 600px;
+}
+
+.debug main section .row > .col-full {
+    height: 900px;
+}
+
+.debug footer .footer-top {
+    height: 600px
+}
+
+/*
+********
+Common
+********
+*/
+
+.container {
+    margin: 0 auto;
+}
+
+.container.big {
+    max-width: 1200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 12px 15px;
+    background-color: #FFF;
+    color: #000;
+    border: 0;
+    font-size: 13px;
+}
+
+
+
+/*
+********
+Typo
+********
+*/
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+}
+
+header * {
+    color: #FFF;
+}
+
+
+
+
+/*
+********
+Header
+********
+*/
+
+header {
+    border-bottom: 4px solid #add8e6;
+    background-color: #255ee9;
+}
+
+header .header-top {
+    /* disattivare padding se header-bar altezza fissa */
+    /* padding: 16px; */
+}
+
+header .header-top .header-bar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+header .header-top .header-bar > * {
+    padding: 10px;
+}
+
+
+header .header-top .header-login {
+    text-align: right;
+}
+
+header .header-top .header-logo,
+header .header-top .header-login {
+    width: 20%;
+}
+
+header .header-top .header-links {
+     width: 60%;
+}
+
+header .header-top .header-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+header .header-top .header-links li {
+   font-size: 14px;
+}
+
+
+
+
+
+
+header .header-bottom {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-bottom .content {
+    width: 700px;
+}
+
+/*
+********
+Main
+********
+*/
+
+main section > div {
+    padding: 50px;
+}
+
+main section:nth-child(even){
+    background-color: #d3d3d3;
+}
+
+main section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .row > .col-big {
+    width: 60%;
+}
+
+main section .row > .col-small {
+    width: 40%;
+}
+
+main section .row > .col-full {
+    width: 100%;
+}
+
+/*
+********
+Footer
+********
+*/
+
+footer {
+    background-color: #23272a;
+}
+
+footer .footer-top {
+    display: flex;
+    padding: 10px 0;
+}
+
+footer .footer-top .main-column {
+    flex-basis: 30%;
+}
+
+footer .footer-top .menu-column {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-top .menu-column > .col {
+    flex-basis: 25%;
+}
+
+footer hr {
+    margin: 30px 0;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    /* esempio flex */
+    /* height: 80px;
+    align-items: center; */
+    padding: 22px 0;
+}
+
+footer .footer-bottom > .col {
+    padding: 5px 10px;
+}
