@@ -114,11 +114,31 @@ ul {
 .btn {
     display: inline-block;
     border-radius: 30px;
-    padding: 12px 15px;
     background-color: #FFF;
     color: #000;
     border: 0;
+    padding: 15px 20px;
+    margin-right: 10px;
+
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn.btn-small {
+    padding: 12px 15px;
     font-size: 13px;
+} 
+
+.btn.btn-primary {
+    background-color: #23272a;
+    color: #FFF;
+}
+
+.btn.btn-secondary {
+    background-color: blue;
+    color: #fff;
 }
 
 
@@ -131,6 +151,7 @@ Typo
 
 body {
     font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
 }
 
 a {
@@ -139,6 +160,22 @@ a {
 
 header * {
     color: #FFF;
+}
+
+.btn i {
+    color: #000;
+}
+
+h1, h2 {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size:40px;
+}
+
+p {
+    line-height: 1.7;
 }
 
 
@@ -151,7 +188,6 @@ Header
 */
 
 header {
-    border-bottom: 4px solid #add8e6;
     background-color: #255ee9;
 }
 
@@ -197,19 +233,27 @@ header .header-top .header-links li {
 
 
 
-
-
-
 header .header-bottom {
     display: flex;
-    padding: 50px;
+    padding: 80px 50px;
     align-items: center;
     justify-content: center;
+    background-image: url(../img/jumbo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header .header-bottom .content {
     width: 700px;
+    text-align: center;
 }
+
+header .header-bottom .content .buttons {
+    margin-top: 20px;
+}
+
+
 
 /*
 ********
