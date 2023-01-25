@@ -271,7 +271,7 @@ main section > div {
 }
 
 main section:nth-child(even){
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
 }
 
 main section .row {
