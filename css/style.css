@@ -141,7 +141,7 @@ h1, h2 {
 }
 
 .btn.btn-secondary {
-    background-color: blue;
+    background-color: #7289da;
     color: #fff;
 }
 
@@ -174,9 +174,19 @@ header * {
     color: #000;
 }
 
+.btn-secondary i {
+    color: #FFF;
+}
+
+
+
 h1,
 h2 {
     font-size:42px;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 p {
@@ -290,6 +300,13 @@ main section .row > .col-small {
 
 main section .row > .col-full {
     width: 100%;
+    text-align: center;
+    padding: 0 95px;
+}
+
+
+main section .row > .col-full h3 {
+  margin: 70px 0 50px 0;
 }
 
 /*
