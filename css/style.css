@@ -111,6 +111,10 @@ ul {
     list-style-type: none;
 }
 
+h1, h2 {
+    margin-bottom: 40px;
+}
+
 .btn {
     display: inline-block;
     border-radius: 30px;
@@ -141,6 +145,10 @@ ul {
     color: #fff;
 }
 
+img.img-fluid {
+    width: 100%;
+}
+
 
 
 /*
@@ -166,12 +174,9 @@ header * {
     color: #000;
 }
 
-h1, h2 {
-    margin-bottom: 40px;
-}
-
-h1 {
-    font-size:40px;
+h1,
+h2 {
+    font-size:42px;
 }
 
 p {
@@ -280,6 +285,7 @@ main section .row > .col-big {
 
 main section .row > .col-small {
     width: 40%;
+    padding: 40px 50px;
 }
 
 main section .row > .col-full {
